@@ -1,0 +1,79 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-image: url(../assets/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr {
+  margin: 0px;
+}
+
+.nav-container > button {
+  height: 25px;
+}
+
+.section-container {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+.section-container > header {
+  text-align: center;
+}
+
+.section-content-container {
+  display: flex;
+}
+
+.form-content-container {
+  text-align: cente;
+}
+
+.label-container {
+  margin-left: 64px;
+}
+
+.input-container {
+  text-align: center;
+}
+
+.input-name {
+  height: 24px;
+  width: 75%;
+  border-radius: 16px;
+}
+
+.input-email {
+  height: 24px;
+  width: 75%;
+  border-radius: 16px;
+}
+
+.input-button {
+  height: 24px;
+  width: 64px;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  border: 0px;
+  margin: 4px;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  border: 0px;
+}

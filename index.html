@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Assignment DanteRama</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  
+  <body>
+    <nav class="header-container">
+      <div class="logo-icon"></div>
+      <div class="nav-container">
+        <button>Home</button>
+        <button>Our Package</button>
+        <button>About Us</button>
+      </div>
+    </nav>
+    <hr/>
+    
+    <main class="section-container">
+      <header>
+      <h1>Your Trusted Travel Agent's</h1>
+      <h3>Your happiness is our happiness</h3>
+      </header>
+      
+      <section class="section-content-container">
+        <!-- Ini konten Autoslide banner -->
+        <div style="height: 300px;width: 100%;background-color: aliceblue;margin-right: 24px;margin-left:64px"></div>
+        
+        <!-- Ini konten form -->
+        <div style="height: 450px;width: 40%;background-color: antiquewhite;margin-left: 24px;margin-right: 48px">
+          
+          <div class="form-content-container">
+          <form id="contactForm" action="/submit" method="post">
+    <div class="label-container"><label for="name">Your Name:</label><br/></div>
+    <div class="input-container"><input type="text" id="name" name="name" required class="input-name"><br/></div>
+    <div class="label-container"><label for="email">Email Address:</label><br/></div>
+    <div class="input-container"><input type="email" id="email" name="email" required class="input-email"><br/></div>
+    <div class="label-container"><label for="interest">What are you interested in?</label><br></div>
+    <div class="input-container"><select id="interest" name="interest"></div>
+        <option value="beach">Beach Vacations</option>
+        <option value="mountains">Mountain Adventures</option>
+        <option value="city">City Breaks</option>
+    </select><br>
+    <div class="input-container"><input type="submit" value="SEND"
+    class="input-button"></div>
+</form>
+      </div>
+        </div>
+      </section>
+    </main>
+    
+  </body>
+</html>
