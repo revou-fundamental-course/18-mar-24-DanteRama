@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
   <head>
-    <title>Assignment - DanteRama</title>
+    <title>Assignment DanteRama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="../js/script.js"></script>
   </head>
   
   <body>
@@ -18,36 +20,237 @@
     
     <main class="section-container">
       <header>
-      <h1>Your Trusted Travel Agent's</h1>
-      <h3>Your happiness is our happiness</h3>
+      <h1 style="margin-bottom: 32px;font-size: 3rem;">Trip Travel Agentku</h1>
+      <h3 style="margin-bottom: 64px; margin-top: 64px;color: #00000065;font-size: 1.5rem;">Your happiness is our happiness</h3>
       </header>
       
       <section class="section-content-container">
         <!-- Ini konten Autoslide banner -->
-        <div style="height: 300px;width: 100%;background-color: aliceblue;margin-right: 24px;margin-left:64px"></div>
+      <div class="banner-content">
+        <div class="slider">
+          <div class="slides">
+            
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            
+           <div class="first-slide">
+             <img src="../assets/1.jpg" classalt="">
+           </div>
+           <div class="slide"><img src="../assets/2.jpg" alt="">
+           </div>
+           <div class="slide">
+             <img src="../assets/3.jpg" alt="">
+           </div>
+           <div class="slide">
+             <img src="../assets/4.jpg" alt="">
+           </div>
+           <div class="slide">
+             <img src="../assets/5.jpg" alt="">
+           </div>
+           
+           <div class="navigation-auto">
+             
+             <div class="auto-btn1"></div>
+             <div class="auto-btn2"></div>
+             <div class="auto-btn3"></div>
+             <div class="auto-btn4"></div>
+             <div class="auto-btn5"></div>
+             
+           </div>
+           
+           <div class="navigation-manual">
+             <label for="radio1" class="manual-btn"></label>
+             <label for="radio2" class="manual-btn"></label>
+             <label for="radio3" class="manual-btn"></label>
+             <label for="radio4" class="manual-btn"></label>
+             <label for="radio5" class="manual-btn"></label>
+             
+           </div>
+          </div>
+        </div>
+        <div class="banner-content-container">
+          <h3 style="color: #00000065;font-size: 1.5rem;padding-left: 100px;padding-right: 200px;"><i>"Liburan jadi menyenangkan bersama Travel Agentku."</i></h3>
+        </div>
+        <div class="profiles">
+          <div class="profile">
+            <div class="profile-img1"></div>
+            <div class="profile-img2"></div>
+          </div>
+          <div class="profile-text">
+            <h3>Florence Hughes</h3>
+            <h5 style="margin-top: -16px;color: #00000065;"><i>Ibu Rumah Tangga, 28</i></h5>
+          </div>
+        </div>
+      </div>
         
         <!-- Ini konten form -->
-        <div style="height: 450px;width: 40%;background-color: antiquewhite;margin-left: 24px;margin-right: 48px">
+        <div class="form-content">
           
-          <div class="form-content-container">
-          <form id="contactForm" action="/submit" method="post">
-    <div class="label-container"><label for="name">Your Name:</label><br/></div>
-    <div class="input-container"><input type="text" id="name" name="name" required class="input-name"><br/></div>
-    <div class="label-container"><label for="email">Email Address:</label><br/></div>
-    <div class="input-container"><input type="email" id="email" name="email" required class="input-email"><br/></div>
-    <div class="label-container"><label for="interest">What are you interested in?</label><br></div>
-    <div class="input-container"><select id="interest" name="interest"></div>
-        <option value="beach">Beach Vacations</option>
-        <option value="mountains">Mountain Adventures</option>
-        <option value="city">City Breaks</option>
-    </select><br>
-    <div class="input-container"><input type="submit" value="SEND"
-    class="input-button"></div>
-</form>
-      </div>
+          <h2 style="margin: 48px 64px 4px;">Contact Us</h2>
+          <h4 style="margin-left: 64px; margin-bottom: 48px; margin-right: 64px; color: #00000065;">Sales akan menghubungi Anda 1x24 Jam setelah data kami terima</h4>
+          
+          <section>
+          <form id="form" action="/submit" method="post">
+            
+              <div class="label-container">
+                <label for="name">Your Name:
+                </label><br/></div>
+              <div class="input-container">
+                <input type="text" id="name" name="name" class="input-name" placeholder="First and last name" required>
+                <br/></div>
+                
+              <div class="label-container">
+                <label for="email">Email Address:
+                </label><br/></div>
+              <div class="input-container">
+                <input type="email" id="email" name="email" class="input-email" placeholder="example@email.com" required>
+                <br/></div>
+                
+              <div class="label-container">
+                <label for="interest">What are you interested in?
+                </label><br></div>
+              <div class="input-container">
+                <select id="interest" name="interest" defaultValue="" class="select-content" required></div>
+                
+              <option hidden value="">
+                Select Option
+              </option>
+              <option value="bali">Bali</option>
+              <option value="japan">Japan</option>
+              <option value="singapore">Singapore</option>
+              <option value="bandung">Bandung</option>
+              <option value="surabaya">Surabaya</option>
+              </select><br>
+              <div class="error"></div>
+              <div class="input-container"><input type="submit" value="SEND" class="input-button"></div>
+          </form>
+          </section>
         </div>
       </section>
     </main>
+    <div style="width: 200px;margin-left:400px;border: 3px solid #ebf2f2;border-radius: 8px"></div>
+    <div class="feature">
+      <h1>Kenapa harus memilih paket kami ?</h1>
+      <div class="feature-content">
+        <div class="numbers">
+          
+        <div class="number">
+          <h1 style="text-align: center;padding-top: 18px;color: #a0abab">1</h1>
+          </div>
+        <div class="benefits">
+          <h2>Fleksible dan Kepuasan Pelanggan</h2>
+          <p style="color: #a0abab;font-size: 1.3rem">Keunikan setiap perjalan adalah hal yang sangat kami hargai. Oleh karena itu, Kami siap mendengarkan keinginan Anda dan menyesuaikan paket perjalanan sesuai dengan prefensi pribadi. Kepuasan Anda adalah prioritas utama kami</p>
+        </div>
+        <div class="number"><h1 style="text-align: center;padding-top: 18px;color: #a0abab">2</h1>
+        </div>
+        <div class="benefits">
+          <h2>Harga Terjangkau dan Transparan</h2>
+          <p style="color: #a0abab;font-size: 1.3rem;">Pentingnya anggaran perjalanan menjadi perhatian utama kami. Oleh karena itu, Kami menawarkan paket perjalanan yang terjangkau tanpa mengorbankan kualitas layanan. Harga yang Anda bayarkan adalah harga yang sesuai dengan kualitas.</p>
+        </div>
+        <div class="number"><h1 style="text-align: center;padding-top: 18px;color: #a0abab">3</h1></div>
+        </div>
+       <div class="benefits">
+          <h2>Profesional Team</h2>
+          <p style="color: #a0abab;font-size: 1.3rem;">Kami memiliki team yang perpengalaman dan profesional, Baik itu Tour Guide, Tour Leader hingga Driver dan Staff yang telah menguasai bidangnya masing-masing.</p>
+        </div>
+      </div>
+    </div>
+    <div class="our-package">
+      <h1> Our Package</h1>
+    </div>
+    <div class="package-content">
+      <div class="package">
+        
+        <div class="logo-package-content1">
+          <div class="logo-package-item1">
+            <img src="../assets/2.png" width="30" height="40" style="margin-left: 20px; margin-top: 16px">
+          </div>
+        <div class="name-package1">
+          <h2>Bali</h2>
+          <h4 style="color: #a0abab;">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</h4>
+        </div>
+        </div>
+          
+        <div class="logo-package-content2">
+          <div class="logo-package-item2">
+            <img src="../assets/2.png" width="30" height="40" style="margin-left: 20px; margin-top: 16px">
+          </div>
+        <div class="name-package2">
+          <h2>Japan</h2>
+          <h4 style="color: #a0abab;">Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik</h4>
+        </div>
+        </div>
+        
+        <div class="logo-package-content3">
+          <div class="logo-package-item3">
+            <img src="../assets/2.png" width="30" height="40" style="margin-left: 20px; margin-top: 16px">
+          </div>
+        <div class="name-package3">
+          <h2>Singapore</h2>
+          <h4 style="color: #a0abab;">Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik</h4>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    <div style="width: 200px;margin-left:650px;border: 3px solid #ebf2f2;border-radius: 8px"></div>
     
+    <div class="package-content">
+      <div class="package">
+        
+        <div class="logo-package-content1">
+          <div class="logo-package-item1">
+            <img src="../assets/3.png" width="40" height="40" style="margin-left: 15px; margin-top: 15px">
+          </div>
+        <div class="name-package1">
+          <h2>Bandung</h2>
+          <h4 style="color: #a0abab;">Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik</h4>
+        </div>
+        </div>
+          
+        <div class="logo-package-content2">
+          <div class="logo-package-item2">
+            <img src="../assets/3.png" width="40" height="40" style="margin-left: 15px; margin-top: 15px">
+          </div>
+        <div class="name-package2">
+          <h2>Surabaya</h2>
+          <h4 style="color: #a0abab;">Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik</h4>
+        </div>
+        </div>
+        
+        <div class="logo-package-content3">
+          <div class="logo-package-item3">
+            <img src="../assets/3.png" width="40" height="40" style="margin-left: 15px; margin-top: 15px">
+          </div>
+        <div class="name-package3">
+          <h2>Dubai</h2>
+          <h4 style="color: #a0abab;">Travel dan wisata di Dubai. Kunjungi cagar budaya dan kuliner yang menarik</h4>
+        </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <hr/>
+  <footer>
+    <div class="footer-content">
+      <h1 class="footer-container1">Trip Travel Agentku</h1>
+      <h3 class="footer-container2">Travel Agentku merupakan jasa tour and travel yang menawarkan beragam paket liburan menarik untuk Anda dengan harga yang sangat bersahabat, Selain itu, kami menawarkan jasa transportasi yang beragam mudah disesuaikan dengan kebutuhan Anda.</h3>
+      <button class="call-to-action">CALL TO ACTION</button>
+      </div>
+      <hr/>
+      <div class="closing">
+        <div class="logo-content">
+          <div class="logo-container"></div>
+        </div>
+        <div class="footer-content-container">
+          <h4>Terms of Service - Privacy and Policy</h4>
+        </div>
+        <div class="footer-content-container1">
+          <h4>©2024 - Travel Agentku</h4>
+        </div>
+      </div>
+  </footer>
 </html>
